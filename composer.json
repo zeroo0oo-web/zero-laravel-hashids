@@ -1,5 +1,5 @@
 {
-    "name": "vinkla/hashids",
+    "name": "zeroo0ooweb/hashids",
     "description": "A Hashids bridge for Laravel",
     "keywords": [
         "hashids",
@@ -8,8 +8,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Vincent Klaiber",
-            "email": "hello@doubledip.se"
+            "name": "Adil kasmi",
+            "email": "zero0o0dev14@gmail.com"
         }
     ],
     "require": {
