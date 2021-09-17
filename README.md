@@ -6,18 +6,18 @@
 
 ```php
 // Encode integers.
-Hashids::encode(4815162342);
+Hashids::encode(4815162342, 'your-salt-string');
 
 // Decode strings.
-Hashids::decode('1LLb3b4ck');
+Hashids::decode('1LLb3b4ck', 'your-salt-string');
 
 // Dependency injection example.
 $hashidsManager->encode(911);
 ```
 
-[![Build Status](https://badgen.net/github/checks/vinkla/laravel-hashids?label=build&icon=github)](https://github.com/vinkla/laravel-hashids/actions)
-[![Monthly Downloads](https://badgen.net/packagist/dm/vinkla/hashids)](https://packagist.org/packages/vinkla/hashids/stats)
-[![Latest Version](https://badgen.net/packagist/v/vinkla/hashids)](https://packagist.org/packages/vinkla/hashids)
+[![Build Status](https://badgen.net/github/checks/vinkla/laravel-hashids?label=build&icon=github)](https://github.com/zeroo0ooweb/laravel-hashids/actions)
+[![Monthly Downloads](https://badgen.net/packagist/dm/vinkla/hashids)](https://packagist.org/packages/zeroo0ooweb/hashids/stats)
+[![Latest Version](https://badgen.net/packagist/v/vinkla/hashids)](https://packagist.org/packages/zeroo0ooweb/hashids)
 
 ## Installation
 
@@ -54,7 +54,7 @@ Here you can see an example of you may use this package. Out of the box, the def
 use zeroo0ooweb\Hashids\Facades\Hashids;
 
 // We're done here - how easy was that, it just works!
-Hashids::encode(4815162342);
+Hashids::encode(4815162342, 'your-salt-string');
 
 // This example is simple and there are far more methods available.
 Hashids::decode('doyouthinkthatsairyourebreathingnow');
