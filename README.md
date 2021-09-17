@@ -24,7 +24,7 @@ $hashidsManager->encode(911);
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
 ```bash
-composer require vinkla/hashids
+composer require zeroo0ooweb/hashids
 ```
 
 ## Configuration
@@ -51,7 +51,7 @@ Here you can see an example of you may use this package. Out of the box, the def
 
 ```php
 // You can alias this in config/app.php.
-use Vinkla\Hashids\Facades\Hashids;
+use zeroo0ooweb\Hashids\Facades\Hashids;
 
 // We're done here - how easy was that, it just works!
 Hashids::encode(4815162342);
@@ -63,7 +63,7 @@ Hashids::decode('doyouthinkthatsairyourebreathingnow');
 The manager will behave like it is a `Hashids\Hashids` class. If you want to call specific connections, you can do that with the connection method:
 
 ```php
-use Vinkla\Hashids\Facades\Hashids;
+use zeroo0ooweb\Hashids\Facades\Hashids;
 
 // Writing this...
 Hashids::connection('main')->encode($id);
@@ -84,7 +84,7 @@ Hashids::setDefaultConnection('alternative'); // The default is now alternative.
 If you prefer to use dependency injection over facades, then you can inject the manager:
 
 ```php
-use Vinkla\Hashids\HashidsManager;
+use zeroo0ooweb\Hashids\HashidsManager;
 
 class Foo
 {
@@ -104,4 +104,4 @@ class Foo
 App::make('Foo')->bar();
 ```
 
-For more information on how to use the `Hashids\Hashids` class, check out the docs at [`hashids/hashids`](https://github.com/vinkla/hashids.php).
+For more information on how to use the `Hashids\Hashids` class, check out the docs at [`hashids/hashids`](https://github.com/zeroo0ooweb/hashids.php).
